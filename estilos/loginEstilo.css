@@ -1,7 +1,55 @@
-body {
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: orange;
-    padding: 100px;
+    padding: 50px;
+}
+
+.container {
+    margin: 20px auto;
+    width: 300px;
+}
+
+.container-screen{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    color: #777;
+}
+
+.login-form{
+    text-align: center;
+}
+
+.control-group {
+    margin-bottom: 10px;
 }
 
 
+input{
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 200px;
+    transition: border .5s;
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
