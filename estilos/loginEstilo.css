@@ -1,7 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: gray;
+    background-color: orange;
     padding: 100px;
 }
 
 
+.container{
+    background-color: gray;
+}
