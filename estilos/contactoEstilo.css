@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
 :root{
     --color-primary-drak: #c0392b;
     --color-secondary-light : #f2f2f2;
@@ -31,6 +32,10 @@ a{
     transition: color .35s ease;
 }
 
+a:hover, a:focus, a:visited {
+    outline: 0;
+    color: darken(var(--color-primary-drak), 30%);
+}
 .container {
     max-width: 960px;
     width: 95%;
@@ -87,4 +92,9 @@ a{
     padding: 0 20px;
 }
 
-.body-conten
+.body-content {
+    margin: 0;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    line-height: 1.38;
+}
