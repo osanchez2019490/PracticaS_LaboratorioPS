@@ -20,3 +20,13 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
+
+function mostrarIframe (){
+    var iframe = document.getElementById("miIframe");
+    var detalle = document.querySelector(".detalle");
+
+    iframe.src = "../paginas/mac.html";
+
+    iframe.style.display = "block";
+    detalle.style.display = "none";
+}
