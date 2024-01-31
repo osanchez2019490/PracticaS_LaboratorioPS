@@ -25,7 +25,7 @@ function mostrarIframe (){
     var iframeContainer = document.querySelector('.iframe-container');
     var overlay = document.querySelector('.overlay');
 
-    iframeContainer.style.display = 'block';
+    iframeContainer.style.display = 'flex';
     overlay.style.display = 'block';
 
     var iframe = document.getElementById('miIframe');
