@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Hind);
-:root{
+
+:root {
     --color-primary-drak: orange;
-    --color-secondary-light : #f2f2f2;
+    --color-secondary-light: #f2f2f2;
     --color-main-bg: white;
     --color-main-text: black;
 }
@@ -21,21 +22,24 @@ body {
     color: var(--color-main-text);
 }
 
-body.nav-fixed-top{
+body.nav-fixed-top {
     padding-top: 45px;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color-primary-drak);
     text-transform: uppercase;
     transition: color .35s ease;
 }
 
-a:hover, a:focus, a:visited {
+a:hover,
+a:focus,
+a:visited {
     outline: 0;
     color: darken(var(--color-primary-drak), 30%);
 }
+
 .container {
     max-width: 960px;
     width: 95%;
@@ -51,7 +55,7 @@ a:hover, a:focus, a:visited {
     color: var(--color-secondary-light) 10%;
 }
 
-.nav{
+.nav {
     margin: 0;
     padding: 20px 0;
     background: var(--color-secondary-light);
@@ -77,7 +81,8 @@ a:hover, a:focus, a:visited {
     color: white;
 }
 
-.nav.nav-fixed-top a:hover,.nav.nav-fixed-top a:focus {
+.nav.nav-fixed-top a:hover,
+.nav.nav-fixed-top a:focus {
     outline: 0;
     color: lighten(var(--color-primary-drak), 40%);
 }
@@ -93,11 +98,11 @@ a:hover, a:focus, a:visited {
 }
 
 .body-content {
-    margin:  0;
-    padding:  0;
+    margin: 0;
+    padding: 0;
     font-size: 1.8rem;
     line-height: 1.38;
-    
+
 }
 
 .body-all {
@@ -109,6 +114,7 @@ a:hover, a:focus, a:visited {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .body-card {
     display: relative;
     align-items: center;
@@ -120,6 +126,7 @@ a:hover, a:focus, a:visited {
     padding-bottom: 50px;
     margin-top: 100px;
 }
+
 .card {
     position: relative;
     width: 300px;
@@ -128,7 +135,7 @@ a:hover, a:focus, a:visited {
     border-radius: 5px;
     overflow: hidden;
     transition: .5s;
-    margin: 15px ;
+    margin: 15px;
 }
 
 .card .head {
@@ -179,7 +186,7 @@ a:hover, a:focus, a:visited {
 }
 
 .card .description h4 {
-    color:  rgb(161, 107, 6);
+    color: rgb(161, 107, 6);
 }
 
 .card .description p {
@@ -187,7 +194,7 @@ a:hover, a:focus, a:visited {
     font-size: 15px;
 }
 
-.card .detalle{
+.card .detalle {
     width: -25px;
     display: flex;
     align-items: center;
@@ -207,15 +214,15 @@ a:hover, a:focus, a:visited {
 }
 
 .card .detalle a:hover {
-    background:  orange;
+    background: orange;
 }
 
 .card:hover {
     box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
-    transform:  translateY(-15px);
+    transform: translateY(-15px);
 }
 
-.agregar a{ 
+.agregar a {
 
     text-decoration: none;
     color: #fff;
@@ -223,14 +230,14 @@ a:hover, a:focus, a:visited {
     padding: 15px 20px;
     border-radius: 5px;
     transition: .3s;
-    
+
 }
 
 .agregar a:hover {
     background: orange;
 }
 
-.agregar{
+.agregar {
     position: absolute;
     margin-top: 35px;
     margin-right: 200px;
@@ -239,28 +246,79 @@ a:hover, a:focus, a:visited {
 
 .titulo {
     position: absolute;
-    text-align: center;    
+    text-align: center;
     font-size: 24px;
     margin-left: 45%;
     margin-top: -20px;
 }
 
-@media  screen and (max-width: 768px) {
-   .container{
-    max-width: 100%;
-   }
-   .titulo{
-    font-size: 20px;
-    top: 10px;
-   }
+@media screen and (max-width: 760px) {
+    .container {
+        max-width: 100%;
+    }
 
-   .agregar {
-    bottom: -770px;
-    right: -2%;
-   }
+    .titulo {
+        position: absolute;
+        text-align: center;
+        font-size: 24px;
+        margin-left: 45%;
+        margin-top: -20px;
+    }
 
-   .card{
-    width: 90%;
-    margin: 5px auto;
-   }
+    .agregar a {
+
+        text-decoration: none;
+        color: #fff;
+        background: orangered;
+        padding: 5px 5px 0px;
+        border-radius: 5px;
+        transition: .3s;
+
+    }
+
+    .agregar {
+        margin-top: 35px;
+        margin-right: 200px;
+        margin-left: 20px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 5px auto;
+    }
+}
+
+@media screen and(max-width: 769px) and (max-width: 1200px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .agregar {
+        margin-top: 35px;
+        margin-right: 200px;
+        margin-left: 20px;
+    }
+
+}
+
+.iframe-container {
+  width: 50%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 999;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }

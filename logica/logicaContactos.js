@@ -22,11 +22,24 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function mostrarIframe (){
-    var iframe = document.getElementById("miIframe");
-    var detalle = document.querySelector(".detalle");
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
 
+    iframeContainer.style.display = 'block';
+    overlay.style.display = 'block';
+
+    var iframe = document.getElementById('miIframe');
     iframe.src = "../paginas/mac.html";
 
-    iframe.style.display = "block";
-    detalle.style.display = "none";
+}
+
+function ocultarIframe(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'none';
+    overlay.style.display = 'none';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src = '';
 }
