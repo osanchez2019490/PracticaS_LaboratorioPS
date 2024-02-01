@@ -1,0 +1,96 @@
+:root {
+    --color-primary-drak: orange;
+    --color-secondary-light: #f2f2f2;
+    --color-main-bg: white;
+    --color-main-text: black;
+}
+
+html {
+    height: 100hv;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100hv;
+    padding: 0;
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    color: var(--color-main-text);
+}
+
+body.nav-fixed-top {
+    padding-top: 45px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary-drak);
+    text-transform: uppercase;
+    transition: color .35s ease;
+}
+
+a:hover,
+a:focus,
+a:visited {
+    outline: 0;
+    color: darken(var(--color-primary-drak), 30%);
+}
+
+.container {
+    max-width: 960px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hero {
+    background: var(--color-primary-drak);
+    padding: 200px 40px;
+    margin: 0;
+    text-align: center;
+    font-size: 7.0rem;
+    color: var(--color-secondary-light) 10%;
+}
+
+.nav {
+    margin: 0;
+    padding: 20px 0;
+    background: var(--color-secondary-light);
+    list-style: none;
+    text-align: center;
+    transition: all .15s ease;
+}
+
+.nav.nav-fixed-top {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background: var(--color-primary-drak);
+    padding: 0;
+}
+
+.nav.nav-fixed-top a {
+    color: white;
+}
+
+.nav.nav-fixed-top a:visited {
+    color: white;
+}
+
+.nav.nav-fixed-top a:hover,
+.nav.nav-fixed-top a:focus {
+    outline: 0;
+    color: lighten(var(--color-primary-drak), 40%);
+}
+
+.nav ul {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
