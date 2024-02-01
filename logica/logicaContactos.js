@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
-function mostrarIframe (){
+function mostrarIframeMac(){
     var iframeContainer = document.querySelector('.iframe-container');
     var overlay = document.querySelector('.overlay');
 
@@ -32,6 +32,55 @@ function mostrarIframe (){
     iframe.src = "../paginas/mac.html";
 
 }
+
+function mostrarIframeTaco(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'flex';
+    overlay.style.display = 'block';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src = "../paginas/mac.html";
+
+}
+
+function mostrarIframeKinal(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'flex';
+    overlay.style.display = 'block';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src = "../paginas/mac.html";
+
+}
+
+function mostrarIframeUser(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'flex';
+    overlay.style.display = 'block';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src = "../paginas/mac.html";
+
+}
+
+function mostrarIframeMama(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'flex';
+    overlay.style.display = 'block';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src = "../paginas/mac.html";
+
+}
+
 
 function ocultarIframe(){
     var iframeContainer = document.querySelector('.iframe-container');

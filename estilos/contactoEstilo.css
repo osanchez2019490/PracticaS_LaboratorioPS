@@ -302,6 +302,20 @@ a:visited {
 
 }
 
+@media screen and(max-width: 720px) and (max-width: 1500px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .agregar {
+        margin-top: 35px;
+        margin-right: 200px;
+        margin-left: 20px;
+    }
+
+}
+
 .iframe-container {
   width: 90%;
   height: 90vh;
