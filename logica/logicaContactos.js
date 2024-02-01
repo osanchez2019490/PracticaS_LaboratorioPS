@@ -41,7 +41,7 @@ function mostrarIframeTaco(){
     overlay.style.display = 'block';
 
     var iframe = document.getElementById('miIframe');
-    iframe.src = "../paginas/mac.html";
+    iframe.src = "../paginas/taco.html";
 
 }
 
