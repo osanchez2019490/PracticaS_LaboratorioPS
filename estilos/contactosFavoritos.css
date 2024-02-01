@@ -228,6 +228,99 @@ a:visited {
     position: absolute;
     text-align: center;
     font-size: 24px;
-    margin-left: 35%;
+    margin-left: 36%;
     margin-top: -20px;
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .titulo {
+        position: absolute;
+        text-align: center;
+        font-size: 24px;
+        margin-left: 12%;
+        margin-top: -20px;
+    }
+
+    .body-card {
+        margin: 0 auto;
+        padding: 0 20px;
+        margin-top: 80px;
+    }
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and(min-width: 760px) and (max-width: 1200px){
+
+    .container {
+        width: 90%;
+    }
+
+    .body-card{
+        margin: 0 auto;
+        padding: 0 5px;
+        margin-left: -200px;
+    }
+    .card {
+        width: calc(100% - 30px);
+        margin: 5px auto 20px;
+    }
+
+}
+
+@media screen and(max-width: 720px){
+
+    .container {
+        width: 80%;
+    }
+
+    .body-card{
+        margin: 0 auto;
+        padding: 0 10px;
+        margin-left: -200px;
+
+    }
+    .card {
+        width: 80%;
+        margin: 5px auto 20px;
+    }
+
+}
+
+.iframe-container {
+  width: 90%;
+  height: 90vh;
+  display: none;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  z-index: 999;
+  overflow: auto;
+  max-width: 90%;
+  max-height: 90hv;
+  border:none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+iframe {
+    width:  100%;
+    height:  100%;
+    border: none;
 }
