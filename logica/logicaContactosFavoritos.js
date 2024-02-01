@@ -20,3 +20,26 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
+
+function mostrarIframeNovia(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'flex';
+    overlay.style.display = 'block';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src = "../paginas/yo.html"
+}
+
+
+function ocultarIframe(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'none';
+    overlay.style.display = 'none';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src= '';
+}
