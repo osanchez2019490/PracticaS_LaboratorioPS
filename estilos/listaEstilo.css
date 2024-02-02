@@ -102,13 +102,7 @@ a:visited {
     padding: 0 20px;
 }
 
-.body-content {
-    margin: 0;
-    padding: 0;
-    font-size: 1.8rem;
-    line-height: 1.38;
 
-}
 
 .body-all {
     display: flex;
