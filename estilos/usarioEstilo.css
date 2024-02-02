@@ -55,6 +55,11 @@ a:visited {
     color: var(--color-secondary-light) 10%;
 }
 
+.hero .container h3{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 .nav {
     margin: 0;
     padding: 20px 0;
@@ -126,7 +131,7 @@ a:visited {
     font-family: sans-serif;
     position: relative;
     margin-bottom: 100px;
-    margin-top: 70px;
+    margin-top: 500px;
 }
 
 .shape {
