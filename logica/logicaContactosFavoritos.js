@@ -40,7 +40,7 @@ function mostrarIframeBraulio(){
     overlay.style.display = 'block';
 
     var iframe = document.getElementById('miIframe');
-    iframe.src = "../paginas/yo.html"
+    iframe.src = "../paginas/braulio.html"
 }
 
 
