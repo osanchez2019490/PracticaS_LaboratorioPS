@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(142deg, rgba(0,0,0,1) 0%, rgba(247,247,247,1) 97%, rgba(255,255,255,1) 100%);
+    background: rgb(173, 173, 173);
 }
 
 .form-contacto {
@@ -55,4 +55,5 @@ body{
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    cursor: pointer;
 }
