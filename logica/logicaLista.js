@@ -20,3 +20,25 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
+
+function addTask(){
+    var taskInput = document.getElementById('taskInput');
+    var taskText = taskInput.value.trim();
+    var priorityInput = document.getElementById('priorityInput');
+    var priority = priorityInput.value;
+
+    if(taskText !== ''){
+        var taskList = document.getElementById('taskList');
+        var li = document.createElement('li');
+        li.textContent = taskText + '(Prioridad: '+ priority + ')';
+        li.contentEditable = true;
+        var deleteButton = document.createElement ('button');
+        deleteButton.textContent = 'Eliminar';
+        deleteButton.onclick = function() {
+            taskList.removeChild(li);
+        };
+        li.appendChild(deleteButton);
+        taskList.appendChild(li);
+        taskInput.value = '';
+    }
+}
