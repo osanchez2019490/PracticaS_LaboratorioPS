@@ -81,6 +81,17 @@ function mostrarIframeMama(){
 
 }
 
+function mostrarIframeFormulario(){
+    var iframeContainer = document.querySelector('.iframe-container');
+    var overlay = document.querySelector('.overlay');
+
+    iframeContainer.style.display = 'flex';
+    overlay.style.display = 'block';
+
+    var iframe = document.getElementById('miIframe');
+    iframe.src = "../paginas/formularioContacto.html";
+
+}
 
 function ocultarIframe(){
     var iframeContainer = document.querySelector('.iframe-container');
