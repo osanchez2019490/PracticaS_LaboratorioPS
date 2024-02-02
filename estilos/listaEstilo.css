@@ -121,6 +121,19 @@ a:visited {
     color: #333;
 }
 
+#taskInput {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#priorityInput {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
 .container-form button{
     padding: 10px 20px;
     margin: 10px;
