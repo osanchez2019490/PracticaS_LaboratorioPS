@@ -122,4 +122,33 @@ a:visited {
     box-shadow: 0 10px 20px #000;
     background-size: cover;
     justify-content: center;
+    text-align: center;
+    align-items: center;
+     overflow: hidden;
+     font-family: sans-serif;
+}
+
+.shape {
+    background-color: rgb(201, 145, 42);
+    height: 250px;
+    width: 400px;
+    margin-left: -20px;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 15px #000;
+    transform:  rotate(25deg);
+}
+
+.img {
+    height:  100px;
+    width: 100px;
+    position: relative;
+    top: 200px;
+    margin-left: 170px;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 15px rgb(58, 54, 54);
+    
+
 }
