@@ -28,8 +28,11 @@ function addTask(){
         var li = document.createElement('li');
 
         var taskContainer = document.createElement('span');
-        taskContainer.textContent = taskText + '    (Prioridad: '+ priority + ')';
+        taskContainer.textContent = taskText;
         taskContainer.contentEditable = true;
+
+        var priorityContainer = document.createElement('span');
+        priorityContainer.textContent =  '    (Prioridad: '+ priority + ')                 ';
 
         var deleteButton = document.createElement ('button');
         deleteButton.textContent = 'Eliminar';
@@ -38,6 +41,7 @@ function addTask(){
         };
 
         li.appendChild(taskContainer);
+        li.appendChild(priorityContainer);
         li.appendChild(deleteButton);
         taskList.appendChild(li);
         taskInput.value = '';
